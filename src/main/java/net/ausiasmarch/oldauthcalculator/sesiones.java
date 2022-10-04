@@ -31,7 +31,6 @@ public class sesiones extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -104,6 +103,7 @@ public class sesiones extends HttpServlet {
                         out.println("<h1><span class='text-danger'>ERROR:</span> usuario no autenticado!</h1>");
                         out.println("</div>");
                     }
+                    break;
             }
             out.println("</div>");
             out.println("</div>");
